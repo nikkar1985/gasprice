@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+Fuel DashBoard
+</head>
+<style>
+
+  
+</style>
+<body>
+<div class="card">
+  <h1> Gas Station Analysis </h1>
+  <div id="data"> Φόρτωση δεδομένων </div>
+</div>
+
+  <script>
+const dashboardData= {
+    "fuel_type": "Unleaded 95",
+    "all_prices": [
+        1.85,
+        1.92,
+        1.78,
+        1.95,
+        1.82
+    ],
+    "average": 1.864,
+    "max": 1.95,
+    "min": 1.78,
+    "is_expensive": true
+
+};
+
+document.getElementById('data).innerHTML = `<p> Τύπος: ${dashboardData.fuel_type} </p>
+                        <p> Μέση τιμή : <span class="price> ${dashboardData.average} </span> </p>
+                        <p> Ακριβότερη Τιμή: ${dashboardData.max} </p>
+                        <p> Φτηνότερη Τιμ΄γ: ${dashboardData.min} </p>
+                        `;
+    
+    
+  </script>
+
+
+  
+</body>
+
+
+  
+</html>
