@@ -4,7 +4,9 @@
 <title> Fuel DashBoard</title>
 </head>
 <style>
-
+body {font-family: sans-serif; background: #f4f4f4 ; padding : 20px;}
+.card {background: white, padding:20px; border-radius: 10px}
+  h1 {color: #333;}
   
 </style>
 <body>
@@ -33,7 +35,7 @@ const dashboardData= {
 document.getElementById('data').innerHTML = `<p> Τύπος: ${dashboardData.fuel_type} </p>
                         <p> Μέση τιμή :  ${dashboardData.average} </p>
                         <p> Ακριβότερη Τιμή: ${dashboardData.max} </p>
-                        <p> Φτηνότερη Τιμ΄γ: ${dashboardData.min} </p>
+                        <p> Φτηνότερη Τιμή: ${dashboardData.min} </p>
                         `;
     
     
